@@ -65,4 +65,37 @@ html[data-theme="frost"]{color-scheme:light;--text:#061018;--muted:#3d5f6e;--acc
   .popup-tag{display:flex;width:100%;padding:10px 13px;padding-right:62px;font-size:.68rem;line-height:1.4;letter-spacing:.055em}
   .close{position:absolute;top:16px;right:16px;width:40px;height:40px}
 }
+
+@media(max-width:600px){
+  .modal{place-items:center;padding:max(18px,env(safe-area-inset-top)) 14px max(24px,env(safe-area-inset-bottom))}
+  .modal-panel{width:100%;max-width:560px;max-height:none;overflow:hidden;padding:44px 28px 34px;border-radius:24px}
+  .modal-panel:before{right:-30px;bottom:-44px;font-size:10.5rem;opacity:.20}
+  .modal-panel h2{max-width:88%;font-size:clamp(2.25rem,10.8vw,3.35rem);line-height:1.02;margin:10px 0 20px}
+  .modal-panel .lead{max-width:100%;font-size:.96rem;line-height:1.65}
+  .popup-tag{display:inline-flex;width:auto;max-width:100%;padding:9px 13px;font-size:.64rem;line-height:1.35;letter-spacing:.045em;white-space:normal}
+  .close{top:15px;right:15px;width:40px;height:40px}
+}
+@media(max-width:380px){
+  .modal-panel{padding:42px 20px 28px}
+  .modal-panel h2{font-size:2.2rem}
+  .modal-panel .lead{font-size:.92rem}
+  .popup-tag{font-size:.59rem}
+}
+
+@media(max-width:600px){
+  .modal-panel:before{
+    right:-74px;
+    bottom:-48px;
+    font-size:10.5rem;
+    opacity:.18;
+  }
+  .popup-tag{
+    position:relative;
+    z-index:1;
+    max-width:calc(100% - 28px);
+  }
+}
+@media(max-width:380px){
+  .modal-panel:before{right:-82px;bottom:-52px;font-size:10rem}
+}
 </style></head><body><div class="page"><header class="nav shell"><a class="brand" href="index.html"><span class="brand-mark">❄</span>Master of Ice</a><nav class="nav-links"><a href="#about">About</a><a class="project-link" href="projects.html">Projects ↗</a><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme"><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15.2A9 9 0 0 1 8.8 3a9 9 0 1 0 12.2 12.2Z"/></svg><span class="snow-icon frost-symbol" aria-hidden="true">❄</span></button></nav></header><main class="home shell"><section><p class="eyebrow">Official digital realm</p><h1>Master<br>of Ice</h1><p class="lead">An online persona shaped by technology, creativity, experimentation, and ambitious ideas.</p><div class="buttons"><a class="button primary" href="projects.html">Enter Projects</a><a class="button" href="#about">About the Persona</a></div><div class="socials" aria-label="Connect with Master of Ice"><a class="social" href="https://www.youtube.com/@masterofice" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg></a><a class="social" href="https://www.linkedin.com/in/yusuf-ghazi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.9 3.5a2.4 2.4 0 1 1 0 4.8 2.4 2.4 0 0 1 0-4.8ZM2.8 9.9H7V21H2.8V9.9Zm6.8 0h4v1.5h.1c.6-1.1 2-2.2 4.1-2.2 4.4 0 5.2 2.9 5.2 6.7V21h-4.2v-4.5c0-1.1 0-3.6-2.2-3.6s-2.6 1.7-2.6 3.5V21H9.6V9.9Z"/></svg></a><a class="social" href="https://github.com/masterofice" target="_blank" rel="noopener noreferrer me" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.4 11.4 0 0 0-3.6 22.2c.6.1.8-.2.8-.5v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.2-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.4 11.4 0 0 0 12 .8Z"/></svg></a><a class="social" href="mailto:contact@masterofice.com" aria-label="Email contact@masterofice.com" title="Email"><svg class="mail-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"></rect><path d="m4 7 8 6 8-6"></path></svg></a></div></section></main><div class="home-footer footer shell"><span>© 2026 Master of Ice</span><span>masterofice.com</span></div></div><section class="modal" id="about"><div class="modal-panel"><a class="close" href="#" aria-label="Close About popup">×</a><p class="eyebrow">About the persona</p><h2>Beyond a username.</h2><p class="lead">Master of Ice is a digital identity for exploring technology, building systems, creating distinctive experiences, and turning ambitious ideas into working projects.</p><span class="popup-tag">Technology · Creativity · Experimentation</span></div></section><script>(function(){var b=document.getElementById('themeToggle');function sync(){var f=document.documentElement.dataset.theme==='frost';b.setAttribute('aria-label',f?'Switch to Night Mode':'Switch to Frost Mode');b.title=f?'Night Mode':'Frost Mode'}b.addEventListener('click',function(){var n=document.documentElement.dataset.theme==='frost'?'night':'frost';document.documentElement.dataset.theme=n;localStorage.setItem('masterofice-theme',n);sync()});sync()})();</script></body></html>
