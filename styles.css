@@ -37,18 +37,18 @@ a{color:inherit;text-decoration:none}
 .nav{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
 .brand-mark{color:var(--accent);font-size:1.45rem;line-height:1;filter:drop-shadow(0 0 10px var(--accent))}
-.nav-links{display:flex;align-items:center;gap:24px;color:var(--muted)}
-.nav-links a:hover{color:var(--text)}
-.nav-links a[aria-current="page"]{color:var(--text)}
+.nav-links{display:flex;align-items:center;gap:10px}
+.nav-links a{padding:9px 18px;border:1px solid var(--line);border-radius:999px;background:var(--panel);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--text);font-weight:600;transition:color .2s,border-color .2s}
+.nav-links a:hover{color:var(--accent);border-color:var(--accent)}
 .theme-toggle,.social{display:grid;place-items:center;border:1px solid var(--line);color:var(--text);background:var(--panel);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:transform .2s,color .2s,border-color .2s,box-shadow .2s}
-.theme-toggle{width:44px;height:44px;border-radius:14px;cursor:pointer;padding:0;font:inherit}
 .theme-toggle:hover,.social:hover{transform:translateY(-2px);color:var(--accent);border-color:var(--accent);box-shadow:0 8px 28px var(--glow)}
 .theme-toggle svg,.social svg{width:22px;height:22px;fill:currentColor}
-.social .mail-icon{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
-.snow-icon{display:none;font-size:23px;line-height:1;text-shadow:0 0 8px currentColor}
+.theme-toggle{width:44px;height:44px;border-radius:14px;cursor:pointer;padding:0;font:inherit}
+.snow-icon{display:none;font-size:23px;line-height:1;text-shadow:0 0 8px currentColor;font-variant-emoji:text}
 html[data-theme="frost"] .moon-icon{display:none}
 html[data-theme="frost"] .snow-icon{display:block}
-.brand-mark,.snow-icon{font-variant-emoji:text}
+.social .mail-icon{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.brand-mark{font-variant-emoji:text}
 
 /* Typography */
 h1,h2{font-family:var(--serif);font-weight:500;letter-spacing:-.02em}
@@ -76,7 +76,7 @@ h1,h2{font-family:var(--serif);font-weight:500;letter-spacing:-.02em}
 .status{align-self:flex-start;display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border:1px solid var(--line);border-radius:999px;color:var(--accent);font-size:.85rem;font-weight:650}
 .status:before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;box-shadow:0 0 10px currentColor}
 
-.footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 20px;padding:20px 0 26px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem}
+.footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 20px;padding:20px 0 26px;color:var(--muted);font-size:.8rem}
 
 /* About popup (opens with the #about anchor, works without JavaScript) */
 .modal{position:fixed;inset:0;z-index:30;display:none;overflow-y:auto;padding:20px;background:var(--scrim);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
@@ -108,9 +108,10 @@ h1,h2{font-family:var(--serif);font-weight:500;letter-spacing:-.02em}
   .nav{height:68px}
   .brand{font-size:.78rem;letter-spacing:.07em;gap:9px}
   .brand-mark{font-size:1.25rem}
-  .nav-links{gap:14px;font-size:.92rem}
-  .nav-links .about-link{display:none}
+  .nav-links{gap:8px;font-size:.92rem}
+  .nav-links a{padding:8px 15px}
   .theme-toggle{width:42px;height:42px;border-radius:13px}
+  .nav-links .about-link{display:none}
   .scene{background-position:57% center}
   .scene:after{background:linear-gradient(0deg,var(--ov-a) 8%,var(--ov-b) 52%,var(--ov-c) 100%)}
   .scene.soft:after{background:linear-gradient(180deg,var(--ov-b),var(--ov-a) 80%)}
@@ -126,7 +127,7 @@ h1,h2{font-family:var(--serif);font-weight:500;letter-spacing:-.02em}
 }
 @media(max-width:360px){
   .brand{font-size:.7rem}
-  .nav-links{gap:10px}
+  .nav-links{gap:6px}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
