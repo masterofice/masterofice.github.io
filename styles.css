@@ -97,7 +97,8 @@ h1,h2{font-family:var(--serif);font-weight:500;letter-spacing:-.02em}
   .projects-main{padding:48px 0 56px}
 }
 @media(min-width:721px){
-  .flake{right:-86px;bottom:-86px;width:230px;height:230px}
+  .flake{right:-92px;bottom:-92px;width:250px;height:250px;opacity:.2}
+  .modal-panel .lead{max-width:28rem}
 }
 @media(max-width:640px){
   .shell{width:min(100% - 28px,1180px)}
